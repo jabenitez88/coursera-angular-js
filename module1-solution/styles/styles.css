@@ -1,5 +1,5 @@
 .message { font-size: 1.3em; font-weight: bold; }
-.redb { border:1px solid red; }
-.greenb { border:1px solid green; }
+.redb{border:1px solid red;}
+.greenb{border:1px solid #57B811;}
 .red { color:red;  padding:20px; }
 .green { color:green;  padding:20px; }
