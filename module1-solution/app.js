@@ -19,10 +19,12 @@ function LunchCheckController ($scope,
     if($scope.names.length > 0 && $scope.names !== "\"\""){
       var nombres = $scope.names.split(comma);
       $scope.mensajeClass = "green";
+      $scope.textboxClass = "green";
       for(i=0;i<nombres.length;i++){
         if(nombres[i].length > 0 && nombres.length != ",") totalNames++;
       }
       if(totalNames ==0){
+        $scope.textboxClass = "red";
         $scope.mensajeClass = "red";
         $scope.mensaje = 'Please enter data first';
       }else if(totalNames <= 3){
@@ -35,6 +37,7 @@ function LunchCheckController ($scope,
     }else{
       //console.log('Please enter data first');
       $scope.mensajeClass = "red";
+      $scope.textboxClass = "red";
       $scope.mensaje = 'Please enter data first';
     }
   };
